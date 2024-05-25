@@ -9,7 +9,7 @@ function submit(){
     if(user == admuser && pass == admpass){
         alert('adm')
     } else if(buser == user && bpass == pass){
-        document.location.href="indexx.html"
+        document.location.href="gg.html"
     } else if(buser != user){
         alert('Usuario não identificado!')
     } else{
@@ -23,7 +23,7 @@ function create(){
     const buser = prompt('What will your nick be?')
     if(buser != admuser){
         alert(`Your nick is ${buser}`)
-        const bpass = prompt("Write yoour password here. NO. THIS NOT A QUESTION HAAHHAAHAH")
+        const bpass = prompt("Write your password here. NO. THIS NOT A QUESTION HAAHHAAHAH")
         const bpass2 = prompt('Now write again hahaahahhahahaha')
         if(bpass === bpass2){
             localStorage.setItem('local-pass', bpass)
