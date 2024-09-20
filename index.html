@@ -12,21 +12,37 @@
     <div class="post">
         <img src="img/banner.png">
     </div>
-    <div class="general">
-        <div class="login">
-            <h1>Access your account</h1>
-            <form action="javascript:submit();">
+    <main>
+        <div class="general">
+            <div class="login">
+                <h1>Access your account</h1>
+                <form action="javascript:submit();">
+                    <label for="user">Username</label>
+                        <input type="text" id="user" autocomplete="off" required>
+                    <label for="pass">Password</label>
+                        <input type="password" id="pass" autocomplete="off" required>
+                    <p id="alert">User not found!</p>
+                    <div class="proceed">
+                        <input class="sub" type="submit" value="PROCEED">
+                        <img src="img/white_arrow.svg" id="arrow">
+                    </div>
+                </form>
+            </div>
+        </div>   
+        <div id="create">
+            <h1>Create a new account</h1>
+            <form action="javascript:create();">
                 <label for="user">Username</label>
                     <input type="text" id="user" autocomplete="off" required>
                 <label for="pass">Password</label>
                     <input type="password" id="pass" autocomplete="off" required>
                 <div class="proceed">
                     <input class="sub" type="submit" value="PROCEED">
-                    <img src="img/white_arrow.svg" class="arrow">
+                    <img src="img/white_arrow.svg" id="arrow">
                 </div>
             </form>
         </div>
-    </div>
+    </main>
     <footer>
         <div class="fot">
             <a onclick="create()">Create an account</a>
