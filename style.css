@@ -99,7 +99,7 @@ input:focus{
 }
 
 /*alerts*/
-#alert{
+.alert{
     color: red;
     position: relative;
     top: -15px;
@@ -128,6 +128,7 @@ input:focus{
     background-color: black;
     border: 4px solid var(--blue);
     border-radius: 15px;
+    z-index: 4;
 }
 
 /*footer*/

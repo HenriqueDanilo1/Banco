@@ -21,7 +21,7 @@
                         <input type="text" id="user" autocomplete="off" required>
                     <label for="pass">Password</label>
                         <input type="password" id="pass" autocomplete="off" required>
-                    <p id="alert">User not found!</p>
+                    <p id="alert" class="alert">User not found!</p>
                     <div class="proceed">
                         <input class="sub" type="submit" value="PROCEED">
                         <img src="img/white_arrow.svg" id="arrow">
@@ -31,11 +31,16 @@
         </div>   
         <div id="create">
             <h1>Create a new account</h1>
-            <form action="javascript:create();">
-                <label for="user">Username</label>
-                    <input type="text" id="user" autocomplete="off" required>
-                <label for="pass">Password</label>
-                    <input type="password" id="pass" autocomplete="off" required>
+            <form action="javascript:register();">
+                <label for="c_user">Username</label>
+                    <input type="text" id="c_user" autocomplete="off" required>
+                <!-- <label for="c_email">Email</label>
+                    <input type="email" id="c_email" autocomplete="off" required> -->
+                <label for="c_pass1">Password</label>
+                    <input type="password" id="c_pass1" autocomplete="off" required>
+                <label for="c_pass2">Password</label>
+                    <input type="password" id="c_pass2" autocomplete="off" required>
+                <p id="c_alert" class="alert">User not found!</p>
                 <div class="proceed">
                     <input class="sub" type="submit" value="PROCEED">
                     <img src="img/white_arrow.svg" id="arrow">
